@@ -24,8 +24,8 @@
 
         .main-container {
             display: flex;
-            width: 90rem;
-            /* height: 490.3125rem; */
+            width: 80rem;
+            /* height: 490rem; */
             padding: 0.5rem 0rem;
             flex-direction: column;
             align-items: center;
@@ -76,18 +76,19 @@
             
         }
 
-        nav ul li a{
+        .button{
             color: var(--bg-color, #FFF);
             border-radius: 3.75rem;
             padding: 0.8rem 1.7rem;
+        }
+        
+        .button:hover{
+            background: rgba(255, 255, 255, 0.1);
         }
         .active, .active:hover{
             background: #FD853A;
         }
 
-        nav ul li a:hover{
-            background: rgba(255, 255, 255, 0.1);
-        }
         .hero-section{
             width: 100%;
             /* height: 840px; */
@@ -134,11 +135,66 @@
         }
         .description-heroSection{
             width: 20rem;
+            color: #344054;
+            font-size: 1.05rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.025em;
+            position: relative;
+            left: -36%;
         }
         .description-heroSection img{
             width: 24px;
             height: 24px;
         }
+        .callToAction-btn{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 0.625rem;
+            position: relative;
+            bottom: 5rem;
+            right: -44%;
+            z-index: 5;
+        }
+     .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid #c7c9cd;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  background-color: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    transform: scale3d(0.95, 0.95, 1);
+}
+.image-graphicAnimation{
+    margin-top: -160px;
+}
+.background-image-svg{
+    position: relative;
+    left: 1%;
+    z-index: 2;
+    width: 680px;
+
+}
     </style>
 </head>
 
@@ -151,15 +207,14 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="active button">Home</a></li>
+                    <li><a href="#about" class="button">About</a></li>
+                    <li><a href="#services" class="button">Services</a></li>
+                    <li><a href="#projects" class="button">Projects</a></li>
+                    <li><a href="#contact" class="button">Contact</a></li>
                 </ul>
             </nav>
         </header>
-    
         <section class="hero-section">
             <div class="title-heroSection">
                 <span class="hero-greating">Hello</span>
@@ -174,6 +229,21 @@
             <div class="description-heroSection">
                 <img src="./assets/images/quote-up.svg" alt="quote">
                 <p>I'm a software developer Kiran's Exceptional product design ensure our website's success.Highly Recommended</p>
+            </div>
+            <div class="callToAction-btn">
+                <button class="btn">Download CV <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
+                  </svg>
+                  </button>
+                <button class="btn" style="width: 120px;">Hire me <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                  </svg>
+                  </button>
+            </div>
+            <div class="image-graphicAnimation">
+                <svg class="background-image-svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 813 406" fill="none">
+                    <path d="M812.673 406C542.08 406 271.487 406 0.894409 406C0.894409 181.833 182.617 0.110565 406.784 0.110565C630.95 0.110565 812.673 181.833 812.673 406Z" fill="#FEB273"/>
+                    </svg>
             </div>
         </section>
     </main>
