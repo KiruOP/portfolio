@@ -1,0 +1,22 @@
+/* make navbar horizontal black background, orange button and white text */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: orange;
+}
+
+.button {
+    background-color: orange;
+    color: white;
+}  
+
