@@ -1,22 +1,202 @@
-/* make navbar horizontal black background, orange button and white text */
-
-body {
-    background-color: black;
-    color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar {
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-color, #fff);
+    color: var(--black, #000);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    width: 80rem;
+    /* height: 490rem; */
+    padding: 0.5rem 0rem;
+    flex-direction: column;
     align-items: center;
 }
 
-.logo {
-    color: orange;
+.logo-nav-header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 5.375rem; */
+    border-radius: 3.125rem;
+    /* border: 1px solid #FFF; */
+    background: #171717;
+    backdrop-filter: blur(7.5px);
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0.5rem;
+    z-index: 10;
 }
 
-.button {
-    background-color: orange;
-    color: white;
-}  
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.site-logo{
+    width: 10rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    color: var(--primary-color, #FD853A);
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button{
+    color: var(--bg-color, #FFF);
+    border-radius: 3.75rem;
+    padding: 0.8rem 1.7rem;
+}
+
+.button:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+.active, .active:hover{
+    background: #FD853A;
+}
+
+.hero-section{
+    width: 100%;
+    /* height: 840px; */
+    background: var(--bg-color, #FFF);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-heroSection{
+    width: 900px;
+    text-align: center;
+    margin-top: 25px;
+}
+.hero-greating{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: lufga;
+    border: 1px solid #FD853A;
+    border-radius: 30px;
+    padding: 4px 12px;
+}
+
+.hero-title{
+    color: #171717;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4rem;
+    letter-spacing: -0.08956rem;
+    margin-top: 10px;
+}
+#bottom-vector-hero{
+    position: relative;
+    left: -30%;
+    bottom: 9%;
+}
+#top-vector-hero{
+    position: relative;
+    right: 0.9%;
+    top: -3.8%;
+}
+.description-heroSection{
+    width: 20rem;
+    color: #344054;
+    font-size: 1.05rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.025em;
+    position: relative;
+    left: -36%;
+}
+.description-heroSection img{
+    width: 24px;
+    height: 24px;
+}
+.callToAction-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.625rem;
+    position: relative;
+    bottom: 5rem;
+    right: -44%;
+    z-index: 5;
+}
+.btn {
+display: flex;
+align-items: center;
+justify-content: center;
+outline: none;
+cursor: pointer;
+width: 150px;
+height: 50px;
+border-radius: 30px;
+border: 2px solid #c7c9cd;
+transition: all 0.2s ease;
+font-size: 14px;
+font-weight: 600;
+color: var(--secondary-color);
+background-color: none;
+}
+
+.btn:hover {
+background-color: var(--primary-color);
+color: var(--bg-color);
+transition: all 0.2s ease;
+}
+
+.btn:active {
+transform: scale3d(0.95, 0.95, 1);
+}
+.image-graphicAnimation{
+margin-top: -130px;
+}
+.background-image-svg{
+position: relative;
+left: 1%;
+z-index: 2;
+width: 630px;
+
+}
+.modal-image{
+background-image: url("./assets/images/modal.png");
+height: 500px;
+width: 400px;
+position: relative;
+z-index: 3;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+bottom: 61%;
+left: 20%;
+}
+
 
