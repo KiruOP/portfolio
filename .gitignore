@@ -1,0 +1,18 @@
+# write in this file for ignore files and folder info.txt and portfolio_v2
+
+# ignore files
+
+*.pyc
+*.log
+*.DS_Store
+*.swp
+*.swo
+*.txt
+
+# ignore folder
+
+*.git
+*.vscode
+
+
+
