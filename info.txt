@@ -1,0 +1,5 @@
+all things added but merge css from old version into main then add original content, resume download option, projects link and info, and add send contact message into mail
+
+finally, make it responsive 
+
+add extra features
